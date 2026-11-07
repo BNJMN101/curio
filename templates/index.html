@@ -3,20 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Class Chat</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-
-  <div id="app" class="app" data-username="{{ username }}">
-    <header class="topbar">
-      <div class="avatar">#</div>
-      <div>
-        <div class="title">Class Chat</div>
-        <div id="online" class="subtitle">connecting...</div>
-      </div>
-      <a class="logout" href="{{ url_for('logout') }}">Log out ({{ username }})</a>
-    </header>
+<title>Curio</title>
+<link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/curio-icon.svg') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+...
+<header class="topbar">
+  <img class="avatar" src="{{ url_for('static', filename='images/curio-icon.svg') }}" alt="Curio">
+  <div>
+    <div class="title">Curio</div>
+    <div id="online" class="subtitle">connecting...</div>
+  </div>
+  <a class="logout" href="{{ url_for('logout') }}">Log out ({{ username }})</a>
+</header>
 
     <main id="messages" class="messages"></main>
 

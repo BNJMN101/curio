@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ 'Sign up' if mode == 'signup' else 'Log in' }} - Class Chat</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-  <div class="login">
-    <div class="login-card">
-      <div class="avatar big">#</div>
-      <h1>Class Chat</h1>
+  <title>{{ 'Sign up' if mode == 'signup' else 'Log in' }} - Curio</title>
+<link rel="icon" type="image/svg+xml" href="{{ url_for('static', filename='images/curio-icon.svg') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+...
+<div class="login">
+  <div class="login-card">
+    <img class="avatar big" src="{{ url_for('static', filename='images/curio-icon.svg') }}" alt="Curio">
+    <h1><span class="logo-wordmark">curio.</span></h1>
 
       {% if mode == 'signup' %}
         <p>Create your account</p>

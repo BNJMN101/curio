@@ -163,3 +163,27 @@ body {
 .switch { font-size: 14px; }
 .switch a, .logout { color: var(--accent); text-decoration: none; }
 .logout { margin-left: auto; font-size: 14px; }
+
+/* ---------- Curio branding ---------- */
+
+:root {
+  /* Brand palette — additive. Existing theme vars stay as-is. */
+  --brand-primary:   #7C3AED;
+  --brand-deep:      #6D28D9;
+  --brand-accent:    #8B5CF6;
+  --brand-light:     #A78BFA;
+  --brand-bg-dark:   #171326;
+  --brand-bg-light:  #FAF8FF;
+}
+
+/* Logo image: preserve aspect ratio on any container size */
+.avatar {
+  object-fit: contain;
+}
+
+/* The "curio." wordmark used on auth screens */
+.logo-wordmark {
+  color: var(--brand-primary);
+  letter-spacing: -0.5px;
+  font-weight: 800;
+}

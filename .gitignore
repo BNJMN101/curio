@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Secrets
+secret.key
+.env
+.env.*
+!.env.example
+
+# Databases
+*.db
+*.sqlite3
+
+# Testing
+.pytest_cache/
+.coverage
+
+# Editors and operating systems
+.vscode/
+.DS_Store
+Thumbs.db
